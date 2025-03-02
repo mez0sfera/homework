@@ -10,7 +10,7 @@ class Book {
     {
         $this->title = $title;
         $this->author = $author;
-        $this->isAvailable = true; // По умолчанию книга доступна
+        $this->isAvailable = true; 
     }
 
     public function getTitle():string 
@@ -135,8 +135,8 @@ class Library
 $library = new Library();
 $library->addBook(new Book("1999", "Винни Пух"));
 $library->addBook(new Book("смешарики", "Сказки"));
-$library->addUser(new User("Alice", 1));
-$library->addUser(new User("Bob", 2));
+$library->addUser(new User("kirill", 1));
+$library->addUser(new User("max", 2));
 
 
 $bookToFind = $library->findBookByTitle("1999");
